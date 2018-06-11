@@ -400,6 +400,7 @@
 	width: 100%;
 	background: #fff;
 	position: relative;
+	overflow: hidden;
 	.center{
 		width: 1090px;
 		margin: 0 auto;
@@ -561,9 +562,188 @@
 		}
 	}
 }
-
-
-
+/*中间的内容部分*/
+.content{
+	width: 100%;
+	height: 600px;
+	background: url(../img/22.jpg) no-repeat center;
+	.textarea{
+		width: 1090px;
+		margin: 0 auto;
+		position: relative;
+		.biaodan{
+			width: 304px;
+			background: #fff;
+			border:1px solid #F5F3EF;
+			padding: 0 40px;
+			position: absolute;
+			right: 0;
+			top: 83px;
+			.top_first{
+				font-size: 18px;
+				line-height: 18px;
+				width: 306px;
+				padding: 30px 0 10px;
+				a{
+					display: inline-block;
+				}
+				a:nth-of-type(1){
+					margin-left: 10px;
+					color: #333;
+				}
+				a:nth-of-type(2){
+					margin-left: 55px;
+					width: 1px;
+					height: 20px;
+					color: #999;
+				}
+				a:nth-of-type(3){
+					margin-left: 55px;
+					color: #999;
+				}
+				a:nth-of-type(3):hover{
+					color: #b4a078;
+				}
+			}
+			.top_second{
+				text-align: right;
+				font-size: 12px;
+				color: #666;
+				line-height: 26px;
+				padding-top: 10px;
+			}
+			.top_second:hover{
+				color: #b4a078;
+				cursor: pointer;
+			}
+			.phone_num{
+				width: 100%;
+				height: 36px;
+				border-radius: 2px;
+				line-height: 36px;
+				border: 1px solid #e8e8e8;
+				.phone_tubiao{
+					width: 29px;
+					height: 24px;
+					padding: 7px 0 7px 7px;
+					float: left;
+					text-align: left;
+					i{
+						background: url(../img/31.png) no-repeat center;
+						display: inline-block;
+						width: 21px;
+						height: 24px;
+						padding-right: 7px;
+						border-right: 1px solid #e8e8e8;
+					}
+				}
+				input{
+					padding-left: 8px;
+					line-height: 34px;
+					width: 216px;
+					font-size: 14px;
+					border: none;
+				}
+				input::-webkit-input-placeholder{
+					color: #dcdcdc;
+				}
+				
+			}
+			.verify_code{
+				width: 260px;
+				height: 26px;
+				border-radius: 13px;
+				position: relative;
+				border: 1px solid #ebebeb;
+				margin-top: 16px;
+				background: #f9f9f9;
+				margin-bottom: 16px;
+			}
+			.phone_num2{
+				width: 100%;
+				height: 36px;
+				border-radius: 2px;
+				line-height: 36px;
+				border: 1px solid #e8e8e8;
+				input{
+					padding-left: 8px;
+					line-height: 34px;
+					width: 204px;
+					font-size: 14px;
+					border: 0;
+					vertical-align: middle;
+					margin-top: -1px;
+				}
+				input::-webkit-input-placeholder{
+					color: #dcdcdc;
+				}
+				.huoqu_code{
+					display: inline-block;
+					height: 36px;
+					background: #eee;
+					margin-right: -1px;
+					position: relative;
+					top: -1px;
+					font-size: 14px;
+					width: 88px;
+					text-align: center;
+				}
+			}
+			.login{
+				width: 100%;
+				height: 48px;
+				background: #b4a078;
+				border-radius: 3px;
+				margin-top: 40px;
+				color: #fff;
+				font-size: 18px;
+				line-height: 48px;
+				text-align: center;
+				margin-bottom: 60px;
+			}
+		}
+		.verify_bottom{
+			width: 305px;
+			height: 60px;
+			position: absolute;
+			right: 0;
+			top: 380px;
+			background: #f5f3ef;
+			padding: 0 40px;
+			i{
+				cursor: pointer;
+				display: inline-block;
+				width: 30px;
+				height: 30px;
+				margin-right: 4px;
+				float: left;
+				margin-top: 15px;
+				background: url(../img/xb6.png) no-repeat center;
+			}
+			.t1{
+				background-position: -7px -4px;
+			}
+			.t2{
+				background-position: -4px -245px;
+			}
+			.t3{
+				background-position: -7px -123px;
+			}
+			.t4{
+				margin-right: 30px;
+				background-position: -5px -83px;
+			}
+			span{
+				margin-top: 18px;
+				float: left;
+				a{
+					color: #999;
+					font-size: 12px;
+				}
+			}
+		}
+	}
+}
 /*底部*/
 .footer{
 	width: 100%;
