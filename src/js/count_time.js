@@ -2,7 +2,7 @@
     $.fn.extend({
         countDown: function (options) {
             var defaults = {
-                    endTime: '2018/6/13',  //结束时间,90年后
+                    endTime: '2018/6/14',  //结束时间,90年后
                     day: '.day',
                     hour: '.hour',
                     minute: '.minute',

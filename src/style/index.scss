@@ -755,11 +755,11 @@
 			overflow: hidden;
 			.swiper-wrapper{
 				width: 2200px;
-				li{
+				.swiper-slide{
 					float: left;
 					background: #fff;
-					width: 265px;
-					margin-right: 10px;
+					width: 265px !important;
+					margin-right: 10px !important;
 					text-align: center;
 					cursor: pointer;
 					a{
@@ -768,6 +768,18 @@
 						display: block;
 						margin: 0 auto;
 						background: url(../img/11.png) no-repeat;
+					}
+					.a1{
+						background: url(../img/36.png) no-repeat;
+					}
+					.a2{
+						background: url(../img/37.png) no-repeat;
+					}
+					.a3{
+						background: url(../img/38.png) no-repeat;
+					}
+					.a4{
+						background: url(../img/39.png) no-repeat;
 					}
 					b{
 						font-size: 14px;
@@ -787,6 +799,18 @@
 				}
 				li:hover a{
 					background: url(../img/20.jpg);
+				}
+				li:hover .a1{
+					background: url(../img/24.jpg);
+				}
+				li:hover .a2{
+					background: url(../img/25.jpg);
+				}
+				li:hover .a3{
+					background: url(../img/26.jpg);
+				}
+				li:hover .a4{
+					background: url(../img/27.jpg);
 				}
 			}
 		}
@@ -826,11 +850,15 @@
 				cursor: pointer;
 			}
 			span{
+				cursor: pointer;
 				font-size: 14px;
 				float: left;
 				color: #333;
 				padding-top: 13px;
 				display: inline-block;
+			}
+			span:hover{
+				color: #b4a078;
 			}
 			span:nth-of-type(1){
 				margin-right: 60px;

@@ -706,6 +706,7 @@
 					color: #dcdcdc;
 				}
 				.huoqu_code{
+					cursor:pointer;
 					display: inline-block;
 					height: 36px;
 					background: #eee;
@@ -873,6 +874,9 @@
 				margin-bottom: 85px;
 				a{
 					color: #999;
+				}
+				a:hover{
+					color: #b4a078;
 				}
 			}
 		}
