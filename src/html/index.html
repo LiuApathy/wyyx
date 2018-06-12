@@ -97,7 +97,10 @@
 			<div class="search_logo">
 				<img src="./img/logo.gif" >
 				<div class="search_line">
-					<input type="text" placeholder="新秀丽制造商行李箱限时购疯抢中" class="search_text" />
+					<form action="javascript:;" name="search-form" class="search_form">
+						<input type="text" placeholder="新秀丽制造商行李箱限时购疯抢中" class="search_text" name="search-input" />
+					</form>
+					<ul id="form_change_list"></ul>
 					<ul class="search_list">
 						<li>大家都在搜</li>
 						<li>家居特惠</li>
@@ -1515,6 +1518,78 @@
 							</div>
 						</div>
 					</li>
+					<li>
+						<a href="javascript:;">
+							<img src="./img/19.jpg" />
+						</a>
+						<div class="message">
+							<div class="msg1">
+								<span>m****9</span>
+								<span>2018-05-24 18:39</span>
+							</div>
+							<div class="msg2">
+								<span>网易味央 黑猪肉香肠（麻辣）350g</span>
+								<span>￥118</span>
+							</div>
+							<div class="msg3">
+								<p>全家都爱吃，多次购买</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<img src="./img/19.jpg" />
+						</a>
+						<div class="message">
+							<div class="msg1">
+								<span>m****9</span>
+								<span>2018-05-24 18:39</span>
+							</div>
+							<div class="msg2">
+								<span>网易味央 黑猪肉香肠（麻辣）350g</span>
+								<span>￥118</span>
+							</div>
+							<div class="msg3">
+								<p>全家都爱吃，多次购买</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<img src="./img/19.jpg" />
+						</a>
+						<div class="message">
+							<div class="msg1">
+								<span>m****9</span>
+								<span>2018-05-24 18:39</span>
+							</div>
+							<div class="msg2">
+								<span>网易味央 黑猪肉香肠（麻辣）350g</span>
+								<span>￥118</span>
+							</div>
+							<div class="msg3">
+								<p>全家都爱吃，多次购买</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<img src="./img/19.jpg" />
+						</a>
+						<div class="message">
+							<div class="msg1">
+								<span>m****9</span>
+								<span>2018-05-24 18:39</span>
+							</div>
+							<div class="msg2">
+								<span>网易味央 黑猪肉香肠（麻辣）350g</span>
+								<span>￥118</span>
+							</div>
+							<div class="msg3">
+								<p>全家都爱吃，多次购买</p>
+							</div>
+						</div>
+					</li>
 				</ul>
 			</div>
 		</div>
@@ -1618,3 +1693,32 @@
 <script src="./js/carousel.js"></script>
 <script src="./js/suspend.js"></script>
 <script src="./js/count_time.js"></script>
+<script>
+	var oForm = document.forms['search-form'];
+
+	var oContent = oForm.elements['search-input'];
+
+	var oList = document.getElementById('form_change_list');
+
+	// 定义回调函数
+	function callback(data) {
+		oList.innerHTML = '';
+		data.s.forEach( v => {
+			var oLi = document.createElement('li');
+			oLi.innerHTML = v;
+
+			oList.appendChild(oLi);
+		});
+	}
+
+	oContent.onpropertychange = oContent.oninput = function () {
+		var oScript =document.createElement('script');
+		oScript.src = 'https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=' + this.value + '&json=1&p=3&sid=1464_25548_21101_18559_17001_20719&req=2&csor=1&cb=callback';
+
+		document.body.appendChild(oScript);
+		document.body.removeChild(oScript);
+	};
+	oContent.onblur = function(){
+		oList.innerHTML = "";
+	};
+</script>

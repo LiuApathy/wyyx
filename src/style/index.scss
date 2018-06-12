@@ -373,13 +373,17 @@
 				position: absolute;
 				right: 20px;
 				top: 75px;
+				.search_form{
+					width: 252px;
+					float: left;
+					padding: 0 20px;
+				}
 				input{
 					width: 252px;
 					height: 22px;
 					border: 0;
 					border-bottom: 1px solid #d8cebc;
-					float: left;
-					padding-left: 10px; 
+					margin-left: 40px;
 				}
 				input::-webkit-input-placeholder{
 				　　color: #999;
@@ -417,8 +421,8 @@
 				.search_list{
 					position: absolute;
 					width: 262px;
-					left: 0;
-					top: 23px;
+					left: 60px;
+					top: 25px;
 					box-sizing: border-box;
 					border: 1px solid #e8e8e8;
 					border-top: 0;
@@ -440,6 +444,27 @@
 						color: #999;
 						cursor: default;
 						background: #fff;
+					}
+				}
+				#form_change_list{
+					z-index: 20;
+					position: absolute;
+					left: 60px;
+					top: 25px;
+					background: #fff;
+					border: 1px solid #e8e8e8;
+					li{
+						cursor: pointer;
+						width: 238px;
+						color: #999;
+						font-size: 14px;
+						background: #fff;
+						text-align: left;
+						padding: 3px 6px;
+					}
+					li:hover{
+						color: #b4a078;
+						background: #f8f5f0;
 					}
 				}
 			}
