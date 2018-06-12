@@ -34,7 +34,7 @@
 		</div>
 	</div>
 	<!-- 顶部悬浮 -->
-	<!-- <div class="top_fix">
+	<div class="top_fix" id="top_fix">
 		<div class="textarea">
 			<i class="top_fix_logo"></i>
 			<div class="search_nav">
@@ -56,28 +56,8 @@
 				<i class="i2"></i>
 				<i class="i3"><span>0</span></i>
 			</div>
-			<div class="nav_option">
-				<div class="nav_option_center">
-					<ul class="option_list">
-						<li><a href="javascript:;"><img src="./img/1.png" /><span>夏凉</span></a></li>
-						<li><a href="javascript:;"><img src="./img/1.png" /><span>夏凉</span></a></li>
-						<li><a href="javascript:;"><img src="./img/1.png" /><span>夏凉</span></a></li>
-						<li><a href="javascript:;"><img src="./img/1.png" /><span>夏凉</span></a></li>
-						<li><a href="javascript:;"><img src="./img/1.png" /><span>夏凉</span></a></li>
-						<li><a href="javascript:;"><img src="./img/1.png" /><span>夏凉</span></a></li>
-						<li><a href="javascript:;"><img src="./img/1.png" /><span>夏凉</span></a></li>
-						<li><a href="javascript:;"><img src="./img/1.png" /><span>夏凉</span></a></li>
-						<li><a href="javascript:;"><img src="./img/1.png" /><span>夏凉</span></a></li>
-						<li><a href="javascript:;"><img src="./img/1.png" /><span>夏凉</span></a></li>
-						<li><a href="javascript:;"><img src="./img/1.png" /><span>夏凉</span></a></li>
-						<li><a href="javascript:;"><img src="./img/1.png" /><span>夏凉</span></a></li>
-						<li><a href="javascript:;"><img src="./img/1.png" /><span>夏凉</span></a></li>
-						<li><a href="javascript:;"><img src="./img/1.png" /><span>夏凉</span></a></li>
-					</ul>
-				</div>
-			</div>
 		</div>
-	</div> -->
+	</div>
 	<!-- 头部 -->
 	<div class="top_nav">
 		<div class="center">
@@ -117,7 +97,7 @@
 			<div class="search_logo">
 				<img src="./img/logo.gif" >
 				<div class="search_line">
-					<input type="text" value="新秀丽制造商行李箱限时购疯抢中" class="search_text" />
+					<input type="text" placeholder="新秀丽制造商行李箱限时购疯抢中" class="search_text" />
 					<ul class="search_list">
 						<li>大家都在搜</li>
 						<li>家居特惠</li>
@@ -133,39 +113,243 @@
 			</div>
 			<div class="search_nav">
 				<ul class="big_list">
-					<li><a href="javascript:;">首页</a></li>
-					<li class="nav_show"><a href="javascript:;">居家</a></li>
-					<li class="nav_show"><a href="javascript:;">配件</a></li>
-					<li class="nav_show"><a href="javascript:;">服装</a></li>
-					<li class="nav_show"><a href="javascript:;">电器</a></li>
-					<li class="nav_show"><a href="javascript:;">洗护</a></li>
-					<li class="nav_show"><a href="javascript:;">饮食</a></li>
-					<li class="nav_show"><a href="javascript:;">餐厨</a></li>
-					<li class="nav_show"><a href="javascript:;">婴童</a></li>
-					<li class="nav_show"><a href="javascript:;">文体</a></li>
-					<li class="nav_show"><a href="javascript:;">特色区</a></li>
-					<li class="stringent"><a href="javascript:;">为你严选</a></li>
-					<li><a href="javascript:;">众筹</a></li>
-				</ul>
-			</div>
-		</div>
-		<div class="nav_option">
-			<div class="nav_option_center">
-				<ul class="option_list">
-					<li><a href="javascript:;"><img src="./img/1.png" /><span>夏凉</span></a></li>
-					<li><a href="javascript:;"><img src="./img/14.png" /><span>毛巾</span></a></li>
-					<li><a href="javascript:;"><img src="./img/15.png" /><span>被枕</span></a></li>
-					<li><a href="javascript:;"><img src="./img/16.png" /><span>家具</span></a></li>
-					<li><a href="javascript:;"><img src="./img/17.png" /><span>收纳</span></a></li>
-					<li><a href="javascript:;"><img src="./img/18.png" /><span>香薰</span></a></li>
-					<li><a href="javascript:;"><img src="./img/19.png" /><span>家饰</span></a></li>
-					<li><a href="javascript:;"><img src="./img/20.png" /><span>宠物</span></a></li>
-					<li><a href="javascript:;"><img src="./img/21.png" /><span>行李箱</span></a></li>
-					<li><a href="javascript:;"><img src="./img/22.png" /><span>搞点</span></a></li>
-					<li><a href="javascript:;"><img src="./img/23.png" /><span>小食</span></a></li>
-					<li><a href="javascript:;"><img src="./img/24.png" /><span>美妆</span></a></li>
-					<li><a href="javascript:;"><img src="./img/25.png" /><span>女鞋</span></a></li>
-					<li><a href="javascript:;"><img src="./img/26.png" /><span>袜子</span></a></li>
+					<li class="nav_show"><a href="javascript:;" class="nav_show_a">首页</a></li>
+					<li class="nav_show">
+						<a href="javascript:;" class="nav_show_a">居家</a>
+						<div class="nav_option">
+							<div class="nav_option_center">
+								<ul class="option_list">
+									<li><a href="javascript:;"><img src="./img/1.png" /><span>夏凉</span></a></li>
+									<li><a href="javascript:;"><img src="./img/14.png" /><span>毛巾</span></a></li>
+									<li><a href="javascript:;"><img src="./img/15.png" /><span>被枕</span></a></li>
+									<li><a href="javascript:;"><img src="./img/16.png" /><span>家具</span></a></li>
+									<li><a href="javascript:;"><img src="./img/17.png" /><span>收纳</span></a></li>
+									<li><a href="javascript:;"><img src="./img/18.png" /><span>香薰</span></a></li>
+									<li><a href="javascript:;"><img src="./img/19.png" /><span>家饰</span></a></li>
+									<li><a href="javascript:;"><img src="./img/20.png" /><span>宠物</span></a></li>
+									<li><a href="javascript:;"><img src="./img/21.png" /><span>行李箱</span></a></li>
+									<li><a href="javascript:;"><img src="./img/22.png" /><span>搞点</span></a></li>
+									<li><a href="javascript:;"><img src="./img/23.png" /><span>小食</span></a></li>
+									<li><a href="javascript:;"><img src="./img/24.png" /><span>美妆</span></a></li>
+									<li><a href="javascript:;"><img src="./img/25.png" /><span>女鞋</span></a></li>
+									<li><a href="javascript:;"><img src="./img/26.png" /><span>袜子</span></a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="nav_show">
+						<a href="javascript:;" class="nav_show_a">配件</a>
+						<div class="nav_option">
+							<div class="nav_option_center">
+								<ul class="option_list">
+									<li><a href="javascript:;"><img src="./img/1.png" /><span>小食</span></a></li>
+									<li><a href="javascript:;"><img src="./img/14.png" /><span>糕点</span></a></li>
+									<li><a href="javascript:;"><img src="./img/15.png" /><span>果干</span></a></li>
+									<li><a href="javascript:;"><img src="./img/16.png" /><span>家具</span></a></li>
+									<li><a href="javascript:;"><img src="./img/17.png" /><span>收纳</span></a></li>
+									<li><a href="javascript:;"><img src="./img/18.png" /><span>香薰</span></a></li>
+									<li><a href="javascript:;"><img src="./img/19.png" /><span>家饰</span></a></li>
+									<li><a href="javascript:;"><img src="./img/20.png" /><span>宠物</span></a></li>
+									<li><a href="javascript:;"><img src="./img/21.png" /><span>行李箱</span></a></li>
+									<li><a href="javascript:;"><img src="./img/22.png" /><span>搞点</span></a></li>
+									<li><a href="javascript:;"><img src="./img/23.png" /><span>小食</span></a></li>
+									<li><a href="javascript:;"><img src="./img/24.png" /><span>美妆</span></a></li>
+									<li><a href="javascript:;"><img src="./img/25.png" /><span>女鞋</span></a></li>
+									<li><a href="javascript:;"><img src="./img/26.png" /><span>袜子</span></a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="nav_show">
+						<a href="javascript:;" class="nav_show_a">服装</a>
+						<div class="nav_option">
+							<div class="nav_option_center">
+								<ul class="option_list">
+									<li><a href="javascript:;"><img src="./img/1.png" /><span>糕点</span></a></li>
+									<li><a href="javascript:;"><img src="./img/14.png" /><span>小食</span></a></li>
+									<li><a href="javascript:;"><img src="./img/15.png" /><span>果干</span></a></li>
+									<li><a href="javascript:;"><img src="./img/16.png" /><span>家具</span></a></li>
+									<li><a href="javascript:;"><img src="./img/17.png" /><span>收纳</span></a></li>
+									<li><a href="javascript:;"><img src="./img/18.png" /><span>香薰</span></a></li>
+									<li><a href="javascript:;"><img src="./img/19.png" /><span>家饰</span></a></li>
+									<li><a href="javascript:;"><img src="./img/20.png" /><span>宠物</span></a></li>
+									<li><a href="javascript:;"><img src="./img/21.png" /><span>行李箱</span></a></li>
+									<li><a href="javascript:;"><img src="./img/22.png" /><span>搞点</span></a></li>
+									<li><a href="javascript:;"><img src="./img/23.png" /><span>小食</span></a></li>
+									<li><a href="javascript:;"><img src="./img/24.png" /><span>美妆</span></a></li>
+									<li><a href="javascript:;"><img src="./img/25.png" /><span>女鞋</span></a></li>
+									<li><a href="javascript:;"><img src="./img/26.png" /><span>袜子</span></a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="nav_show">
+						<a href="javascript:;" class="nav_show_a">电器</a>
+						<div class="nav_option">
+							<div class="nav_option_center">
+								<ul class="option_list">
+									<li><a href="javascript:;"><img src="./img/1.png" /><span>夏凉</span></a></li>
+									<li><a href="javascript:;"><img src="./img/14.png" /><span>毛巾</span></a></li>
+									<li><a href="javascript:;"><img src="./img/15.png" /><span>被枕</span></a></li>
+									<li><a href="javascript:;"><img src="./img/16.png" /><span>家具</span></a></li>
+									<li><a href="javascript:;"><img src="./img/17.png" /><span>收纳</span></a></li>
+									<li><a href="javascript:;"><img src="./img/18.png" /><span>香薰</span></a></li>
+									<li><a href="javascript:;"><img src="./img/19.png" /><span>家饰</span></a></li>
+									<li><a href="javascript:;"><img src="./img/20.png" /><span>宠物</span></a></li>
+									<li><a href="javascript:;"><img src="./img/21.png" /><span>行李箱</span></a></li>
+									<li><a href="javascript:;"><img src="./img/22.png" /><span>搞点</span></a></li>
+									<li><a href="javascript:;"><img src="./img/23.png" /><span>小食</span></a></li>
+									<li><a href="javascript:;"><img src="./img/24.png" /><span>美妆</span></a></li>
+									<li><a href="javascript:;"><img src="./img/25.png" /><span>女鞋</span></a></li>
+									<li><a href="javascript:;"><img src="./img/26.png" /><span>袜子</span></a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="nav_show">
+						<a href="javascript:;" class="nav_show_a">洗护</a>
+						<div class="nav_option nav_option1">
+							<div class="nav_option_center">
+								<ul class="option_list">
+									<li><a href="javascript:;"><img src="./img/1.png" /><span>糕点</span></a></li>
+									<li><a href="javascript:;"><img src="./img/14.png" /><span>小食</span></a></li>
+									<li><a href="javascript:;"><img src="./img/15.png" /><span>果干</span></a></li>
+									<li><a href="javascript:;"><img src="./img/16.png" /><span>家具</span></a></li>
+									<li><a href="javascript:;"><img src="./img/17.png" /><span>收纳</span></a></li>
+									<li><a href="javascript:;"><img src="./img/18.png" /><span>香薰</span></a></li>
+									<li><a href="javascript:;"><img src="./img/19.png" /><span>家饰</span></a></li>
+									<li><a href="javascript:;"><img src="./img/20.png" /><span>宠物</span></a></li>
+									<li><a href="javascript:;"><img src="./img/21.png" /><span>行李箱</span></a></li>
+									<li><a href="javascript:;"><img src="./img/22.png" /><span>搞点</span></a></li>
+									<li><a href="javascript:;"><img src="./img/23.png" /><span>小食</span></a></li>
+									<li><a href="javascript:;"><img src="./img/24.png" /><span>美妆</span></a></li>
+									<li><a href="javascript:;"><img src="./img/25.png" /><span>女鞋</span></a></li>
+									<li><a href="javascript:;"><img src="./img/26.png" /><span>袜子</span></a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="nav_show">
+						<a href="javascript:;" class="nav_show_a">饮食</a>
+						<div class="nav_option">
+							<div class="nav_option_center">
+								<ul class="option_list">
+									<li><a href="javascript:;"><img src="./img/1.png" /><span>夏凉</span></a></li>
+									<li><a href="javascript:;"><img src="./img/14.png" /><span>毛巾</span></a></li>
+									<li><a href="javascript:;"><img src="./img/15.png" /><span>被枕</span></a></li>
+									<li><a href="javascript:;"><img src="./img/16.png" /><span>家具</span></a></li>
+									<li><a href="javascript:;"><img src="./img/17.png" /><span>收纳</span></a></li>
+									<li><a href="javascript:;"><img src="./img/18.png" /><span>香薰</span></a></li>
+									<li><a href="javascript:;"><img src="./img/19.png" /><span>家饰</span></a></li>
+									<li><a href="javascript:;"><img src="./img/20.png" /><span>宠物</span></a></li>
+									<li><a href="javascript:;"><img src="./img/21.png" /><span>行李箱</span></a></li>
+									<li><a href="javascript:;"><img src="./img/22.png" /><span>搞点</span></a></li>
+									<li><a href="javascript:;"><img src="./img/23.png" /><span>小食</span></a></li>
+									<li><a href="javascript:;"><img src="./img/24.png" /><span>美妆</span></a></li>
+									<li><a href="javascript:;"><img src="./img/25.png" /><span>女鞋</span></a></li>
+									<li><a href="javascript:;"><img src="./img/26.png" /><span>袜子</span></a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="nav_show">
+						<a href="javascript:;" class="nav_show_a">餐厨</a>
+						<div class="nav_option">
+							<div class="nav_option_center">
+								<ul class="option_list">
+									<li><a href="javascript:;"><img src="./img/1.png" /><span>糕点</span></a></li>
+									<li><a href="javascript:;"><img src="./img/14.png" /><span>小食</span></a></li>
+									<li><a href="javascript:;"><img src="./img/15.png" /><span>果干</span></a></li>
+									<li><a href="javascript:;"><img src="./img/16.png" /><span>家具</span></a></li>
+									<li><a href="javascript:;"><img src="./img/17.png" /><span>收纳</span></a></li>
+									<li><a href="javascript:;"><img src="./img/18.png" /><span>香薰</span></a></li>
+									<li><a href="javascript:;"><img src="./img/19.png" /><span>家饰</span></a></li>
+									<li><a href="javascript:;"><img src="./img/20.png" /><span>宠物</span></a></li>
+									<li><a href="javascript:;"><img src="./img/21.png" /><span>行李箱</span></a></li>
+									<li><a href="javascript:;"><img src="./img/22.png" /><span>搞点</span></a></li>
+									<li><a href="javascript:;"><img src="./img/23.png" /><span>小食</span></a></li>
+									<li><a href="javascript:;"><img src="./img/24.png" /><span>美妆</span></a></li>
+									<li><a href="javascript:;"><img src="./img/25.png" /><span>女鞋</span></a></li>
+									<li><a href="javascript:;"><img src="./img/26.png" /><span>袜子</span></a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="nav_show">
+						<a href="javascript:;" class="nav_show_a">婴童</a>
+						<div class="nav_option">
+							<div class="nav_option_center">
+								<ul class="option_list">
+									<li><a href="javascript:;"><img src="./img/1.png" /><span>夏凉</span></a></li>
+									<li><a href="javascript:;"><img src="./img/14.png" /><span>毛巾</span></a></li>
+									<li><a href="javascript:;"><img src="./img/15.png" /><span>被枕</span></a></li>
+									<li><a href="javascript:;"><img src="./img/16.png" /><span>家具</span></a></li>
+									<li><a href="javascript:;"><img src="./img/17.png" /><span>收纳</span></a></li>
+									<li><a href="javascript:;"><img src="./img/18.png" /><span>香薰</span></a></li>
+									<li><a href="javascript:;"><img src="./img/19.png" /><span>家饰</span></a></li>
+									<li><a href="javascript:;"><img src="./img/20.png" /><span>宠物</span></a></li>
+									<li><a href="javascript:;"><img src="./img/21.png" /><span>行李箱</span></a></li>
+									<li><a href="javascript:;"><img src="./img/22.png" /><span>搞点</span></a></li>
+									<li><a href="javascript:;"><img src="./img/23.png" /><span>小食</span></a></li>
+									<li><a href="javascript:;"><img src="./img/24.png" /><span>美妆</span></a></li>
+									<li><a href="javascript:;"><img src="./img/25.png" /><span>女鞋</span></a></li>
+									<li><a href="javascript:;"><img src="./img/26.png" /><span>袜子</span></a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="nav_show">
+						<a href="javascript:;" class="nav_show_a">文体</a>
+						<div class="nav_option">
+							<div class="nav_option_center">
+								<ul class="option_list">
+									<li><a href="javascript:;"><img src="./img/1.png" /><span>糕点</span></a></li>
+									<li><a href="javascript:;"><img src="./img/14.png" /><span>小食</span></a></li>
+									<li><a href="javascript:;"><img src="./img/15.png" /><span>果干</span></a></li>
+									<li><a href="javascript:;"><img src="./img/16.png" /><span>冲饮</span></a></li>
+									<li><a href="javascript:;"><img src="./img/17.png" /><span>茗茶</span></a></li>
+									<li><a href="javascript:;"><img src="./img/18.png" /><span>食材</span></a></li>
+									<li><a href="javascript:;"><img src="./img/19.png" /><span>坚果</span></a></li>
+									<li><a href="javascript:;"><img src="./img/20.png" /><span>炒货</span></a></li>
+									<li><a href="javascript:;"><img src="./img/21.png" /><span>生鲜</span></a></li>
+									<li><a href="javascript:;"><img src="./img/22.png" /><span>调味</span></a></li>
+									<li><a href="javascript:;"><img src="./img/23.png" /><span>酒水</span></a></li>
+									<li><a href="javascript:;"><img src="./img/24.png" /><span>饮料</span></a></li>
+									<li><a href="javascript:;"><img src="./img/25.png" /><span>可乐</span></a></li>
+									<li><a href="javascript:;"><img src="./img/26.png" /><span>雪碧</span></a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="nav_show">
+						<a href="javascript:;" class="nav_show_a">特色区</a>
+						<div class="nav_option">
+							<div class="nav_option_center">
+								<ul class="option_list">
+									<li><a href="javascript:;"><img src="./img/1.png" /><span>夏凉</span></a></li>
+									<li><a href="javascript:;"><img src="./img/14.png" /><span>毛巾</span></a></li>
+									<li><a href="javascript:;"><img src="./img/15.png" /><span>被枕</span></a></li>
+									<li><a href="javascript:;"><img src="./img/16.png" /><span>家具</span></a></li>
+									<li><a href="javascript:;"><img src="./img/17.png" /><span>收纳</span></a></li>
+									<li><a href="javascript:;"><img src="./img/18.png" /><span>香薰</span></a></li>
+									<li><a href="javascript:;"><img src="./img/19.png" /><span>家饰</span></a></li>
+									<li><a href="javascript:;"><img src="./img/20.png" /><span>宠物</span></a></li>
+									<li><a href="javascript:;"><img src="./img/21.png" /><span>行李箱</span></a></li>
+									<li><a href="javascript:;"><img src="./img/22.png" /><span>搞点</span></a></li>
+									<li><a href="javascript:;"><img src="./img/23.png" /><span>小食</span></a></li>
+									<li><a href="javascript:;"><img src="./img/24.png" /><span>美妆</span></a></li>
+									<li><a href="javascript:;"><img src="./img/25.png" /><span>女鞋</span></a></li>
+									<li><a href="javascript:;"><img src="./img/26.png" /><span>袜子</span></a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="stringent nav_show">
+						<a href="javascript:;" class="nav_show_a">为你严选</a>
+					</li>
+					<li class="nav_show">
+						<a href="javascript:;" class="nav_show_a">众筹</a>
+					</li>
 				</ul>
 			</div>
 		</div>
@@ -230,44 +414,44 @@
 				<h3>新品首发</h3><span>为你寻觅世间好物</span>
 				<a href="javascript:;">更多新品&nbsp;&nbsp;&gt;</a>
 			</div>
-			<div class="new_content">
-				<ul class="new_content_list">
-					<li>
+			<div class="swiper-container">
+				<ul class="swiper-wrapper">
+					<li class="swiper-slide">
 						<a href="javascript"></a>
 						<b>破壁机/冷热双杯</b><br />
 						<span>¥699</span>
 					</li>
-					<li>
+					<li class="swiper-slide">
 						<a href="javascript"></a>
 						<b>破壁机/冷热双杯</b><br />
 						<span>¥699</span>
 					</li>
-					<li>
+					<li class="swiper-slide">
 						<a href="javascript"></a>
 						<b>破壁机/冷热双杯</b><br />
 						<span>¥699</span>
 					</li>
-					<li>
+					<li class="swiper-slide">
 						<a href="javascript"></a>
 						<b>破壁机/冷热双杯</b><br />
 						<span>¥699</span>
 					</li>
-					<li>
+					<li class="swiper-slide">
 						<a href="javascript"></a>
 						<b>破壁机/冷热双杯</b><br />
 						<span>¥699</span>
 					</li>
-					<li>
+					<li class="swiper-slide">
 						<a href="javascript"></a>
 						<b>破壁机/冷热双杯</b><br />
 						<span>¥699</span>
 					</li>
-					<li>
+					<li class="swiper-slide">
 						<a href="javascript"></a>
 						<b>破壁机/冷热双杯</b><br />
 						<span>¥699</span>
 					</li>
-					<li>
+					<li class="swiper-slide">
 						<a href="javascript"></a>
 						<b>破壁机/冷热双杯</b><br />
 						<span>¥699</span>
@@ -366,17 +550,17 @@
 			</div>
 			<div class="left_box">
 				<a href="javascript:;">
-					<img src="./img/14.jpg" />
+					<img src="./img/23.jpg" />
 				</a>
 				<div class="dingwei">
 					<h4>14点场</h4>
 					<h5>距离结束还剩</h5>
 					<div class="clock">
-						<span class="time">00</span>
+						<span class="time hour">00</span>
 						<span class="colon">:</span>
-						<span class="time">08</span>
+						<span class="time minute">00</span>
 						<span class="colon">:</span>
-						<span class="time">21</span>
+						<span class="time sec">00</span>
 					</div>
 					<span class="look_all">查看全部&nbsp;&nbsp;&gt;</span>
 				</div>
@@ -1433,3 +1617,4 @@
 <script src="./js/show.js"></script>
 <script src="./js/carousel.js"></script>
 <script src="./js/suspend.js"></script>
+<script src="./js/count_time.js"></script>

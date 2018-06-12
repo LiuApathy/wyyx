@@ -569,6 +569,7 @@
 	background: url(../img/22.jpg) no-repeat center;
 	.textarea{
 		width: 1090px;
+		height: 600px;
 		margin: 0 auto;
 		position: relative;
 		.biaodan{
@@ -579,6 +580,7 @@
 			position: absolute;
 			right: 0;
 			top: 83px;
+			display: block;
 			.top_first{
 				font-size: 18px;
 				line-height: 18px;
@@ -653,11 +655,38 @@
 				width: 260px;
 				height: 26px;
 				border-radius: 13px;
+				border: 1px solid #cbcbcb;
 				position: relative;
-				border: 1px solid #ebebeb;
 				margin-top: 16px;
 				background: #f9f9f9;
 				margin-bottom: 16px;
+				cursor: default;
+				.verify_img{
+					position: absolute;
+					left: 0;
+					top: 0;
+					width: 58.5px;
+					cursor: pointer;
+				}
+				span{
+					position: absolute;
+					left: 82px;
+					line-height: 27px;
+					font-size: 12px;
+					color: #a8a8a8;
+					top: 0;
+				}
+				.verify_block{
+					width: 260px;
+					border-radius: 8px;
+					position: absolute;
+					left: 0;
+					top: -90px;
+					display: none;
+				}
+			}
+			.verify_code:hover .verify_block{
+				display: block;
 			}
 			.phone_num2{
 				width: 100%;
@@ -700,6 +729,7 @@
 				line-height: 48px;
 				text-align: center;
 				margin-bottom: 60px;
+				cursor: pointer;
 			}
 		}
 		.verify_bottom{
@@ -723,15 +753,27 @@
 			.t1{
 				background-position: -7px -4px;
 			}
+			.t1:hover{
+				background-position: -7px -43px;
+			}
 			.t2{
 				background-position: -4px -245px;
+			}
+			.t2:hover{
+				background-position: -4px -289px;
 			}
 			.t3{
 				background-position: -7px -123px;
 			}
+			.t3:hover{
+				background-position: -7px -203px;
+			}
 			.t4{
 				margin-right: 30px;
 				background-position: -5px -83px;
+			}
+			.t4:hover{
+				background-position: -5px -163px;
 			}
 			span{
 				margin-top: 18px;
@@ -739,6 +781,99 @@
 				a{
 					color: #999;
 					font-size: 12px;
+				}
+				a:hover{
+					color: #b4a078;
+				}
+			}
+		}
+		.biaodan1{
+			display: none;
+		}
+		.biaodan2{
+			display: none;
+			.top_first{
+				a:nth-of-type(1){
+					margin-left: 10px;
+					color: #999;
+				}
+				a:nth-of-type(2){
+					margin-left: 55px;
+					width: 1px;
+					height: 20px;
+					color: #999;
+				}
+				a:nth-of-type(3){
+					margin-left: 55px;
+					color: #333;
+				}
+				a:nth-of-type(1):hover{
+					color: #b4a078;
+				}
+			}
+			.phone_num1{
+				margin-top: 40px;
+				.phone_tubiao{
+					i{
+						background: url(../img/34.png) no-repeat center;
+						background-position: 0 2px;
+					}
+				}
+			}
+			.phone_num2{
+				margin-top: 15px;
+				.phone_tubiao{
+					i{
+						background: url(../img/35.png) no-repeat center;
+						background-position: 0 2px;
+					}
+				}
+			}
+			.verify_bottom{
+				top: 340px;
+			}
+		}
+		.biaodan3{
+			.top_first{
+				a{
+					font-size: 12px;
+				}
+				a:nth-of-type(1){
+					margin-left: 10px;
+					color: #333;
+					font-size: 18px;
+					cursor: text;
+				}
+				a:nth-of-type(2){
+					margin-left: 55px;
+					color: #666;
+					width: 48px;
+					line-height: 18px;
+				}
+				a:nth-of-type(3){
+					margin-left: 25px;
+					color: #666;
+				}
+				a:nth-of-type(2):hover{
+					color: #b4a078;
+				}
+				a:nth-of-type(3):hover{
+					color: #b4a078;
+				}
+			}
+			.phone_num3{
+				margin-top: 15px;
+			}
+			.login{
+				margin-bottom: 12px;
+			}
+			.privacy{
+				display: block;
+				color: #999;
+				font-size: 12px;
+				margin-bottom: 85px;
+				a{
+					color: #999;
 				}
 			}
 		}

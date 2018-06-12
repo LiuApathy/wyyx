@@ -74,9 +74,8 @@
 }
 /*顶部悬浮*/
 .top_fix{
-	z-index: 99;
 	position: fixed;
-	top: -60px;
+	top: -70px;
 	left: 0;
 	width: 100%;
 	height: 60px;
@@ -124,7 +123,7 @@
 						border-bottom: 3px solid #b4a078;
 					}
 				}
-				li:hover a{
+				.nav_show:hover a{
 					color: #b4a078;
 					border-bottom: 3px solid #b4a078;
 				}
@@ -170,50 +169,6 @@
 				width: 20px;
 				height: 22px;
 				margin-right: 28px;
-			}
-		}
-		.nav_option{
-			height: 210px;
-			width: 100%;
-			background: #fff;
-			display: none;
-			position: absolute;
-			top: 60px;
-			z-index: 5;
-			.nav_option_center{
-				width: 1090px;
-				margin: 0 auto;
-				position: relative;
-				left: -10px;
-				.option_list{
-					padding: 0 40px;
-					overflow: hidden;
-					li{
-						float: left;
-						a{
-							padding: 0 50px;
-							display: block;
-							margin-bottom: 30px;
-							img{
-								width: 44px;
-								height: 44px;
-								display: block;
-								margin: 0 auto;
-							}
-							span{
-								font-size: 14px;
-								font-weight: 600;
-								color: #000;
-								display: block;
-								margin: 13px auto 0px;
-								text-align: center;
-							}
-						}
-						a:hover span{
-							color: #b4a078;
-						}
-					}
-				}
 			}
 		}
 	}
@@ -426,6 +381,9 @@
 					float: left;
 					padding-left: 10px; 
 				}
+				input::-webkit-input-placeholder{
+				　　color: #999;
+				}
 				i{
 					background: url(../img/xb3.png) no-repeat;
 					float: left;
@@ -488,74 +446,81 @@
 		}
 		.search_nav{
 			.big_list{
-				li{
+				position: relative;
+				.nav_show{
 					float: left;
 					display: block;
 					margin-top: 6px;
 					padding: 0 24px;
-					a{
+					.nav_show_a{
 						font-size: 14px;
 						color: #000;
 						display: block;
 						font-weight: 600;
 						padding-bottom: 6px;
 					}
+					.nav_option{
+						height: 210px;
+						width: 100%;
+						background: #fff;
+						display: none;
+						position: absolute;
+						left: 0;
+						top: 34px;
+						z-index: 3;
+						padding-top: 30px;
+						.nav_option_center{
+							width: 1090px;
+							margin: 0 auto;
+							position: relative;
+							left: -10px;
+							.option_list{
+								padding: 0 40px;
+								overflow: hidden;
+								li{
+									float: left;
+									a{
+										padding: 0 50px;
+										display: block;
+										margin-bottom: 30px;
+										img{
+											width: 44px;
+											height: 44px;
+											display: block;
+											margin: 0 auto;
+										}
+										span{
+											font-size: 14px;
+											font-weight: 600;
+											color: #000;
+											display: block;
+											margin: 13px auto 0px;
+											text-align: center;
+										}
+									}
+									a:hover span{
+										color: #b4a078;
+									}
+								}
+							}
+						}
+					}
 				}
-				li:first-child{
-					a{
+				.nav_show:hover .nav_option{
+					display: block;
+				}
+				.nav_show:first-child{
+					.nav_show_a{
 						color: #b4a078;
 						border-bottom: 3px solid #b4a078;
 					}
 				}
-				li:hover a{
+				.nav_show:hover .nav_show_a{
 					color: #b4a078;
 					border-bottom: 3px solid #b4a078;
 				}
 				.stringent{
 					border-left: 1px solid #ccc;
-				}
-			}
-		}
-	}
-	.nav_option{
-		height: 210px;
-		width: 100%;
-		background: #fff;
-		display: none;
-		position: absolute;
-		z-index: 5;
-		.nav_option_center{
-			width: 1090px;
-			margin: 0 auto;
-			position: relative;
-			left: -10px;
-			.option_list{
-				padding: 0 40px;
-				overflow: hidden;
-				li{
-					float: left;
-					a{
-						padding: 0 50px;
-						display: block;
-						margin-bottom: 30px;
-						img{
-							width: 44px;
-							height: 44px;
-							display: block;
-							margin: 0 auto;
-						}
-						span{
-							font-size: 14px;
-							font-weight: 600;
-							color: #000;
-							display: block;
-							margin: 13px auto 0px;
-							text-align: center;
-						}
-					}
-					a:hover span{
-						color: #b4a078;
-					}
 				}
 			}
 		}
@@ -759,11 +724,11 @@
 				color: #b4a078;
 			}
 		}
-		.new_content{
+		.swiper-container{
 			width: 1090px;
 			margin: 0 auto;
 			overflow: hidden;
-			.new_content_list{
+			.swiper-wrapper{
 				width: 2200px;
 				li{
 					float: left;
