@@ -627,8 +627,6 @@
 			.detail_box_right{
 				float: right;
 				width: 502px;
-				height: 600px;
-				background: yellowgreen;
 				margin-left: 60px;
 				h3{
 					margin-bottom: 7px;
@@ -675,9 +673,106 @@
 				.particular{
 					width: 100%;
 					background: #f5f3ef;
+					padding-bottom: 15px;
 					p{
 						margin-bottom: 5px;
 						overflow: hidden;
+						.first_left_span{
+							float: left;
+							width: 55px;
+							font-size: 12px;
+							margin-left: 16px;
+							color: #666;
+							line-height: 30px;
+							margin-top: 16px;
+						}
+						.prince_solgan{
+							line-height: 30px;
+							color: #d7282d;
+							font-size: 18px;
+							font-weight: 600;
+							margin-top: 13px;
+							float: left;
+						}
+						.big_prince{
+							font-size: 28px;
+							margin-top: 13px;
+							float: left;
+							line-height: 30px;
+							margin-left: 2px;
+							color: #d7282d;
+							font-weight: 600;
+						}
+						.right_span{
+							text-align: center;
+							padding-right: 15px;
+							float: right;
+							span:nth-of-type(1){
+								font-size: 18px;
+							}
+							span:nth-of-type(2){
+								font-size: 13px;
+							}
+						}
+						.left_span{
+							float: left;
+							width: 55px;
+							font-size: 12px;
+							margin-left: 16px;
+							color: #666;
+							line-height: 30px;
+						}
+						.small_span{
+							font-size: 12px;
+						}
+						.underline_div{
+							max-width: 410px;
+							float: left;
+							span{
+								text-align: left;
+								color: #666;
+								font-size: 12px;
+								padding: 0 5px;
+								cursor: pointer;
+							}
+							span:nth-of-type(1){
+								padding-left: 0;
+							}
+						}
+						.underline_div:hover span{
+							text-decoration: underline;
+						}
+					}
+					.dashed{
+						height: 1px;
+						border: 0;
+						margin: 10px 20px 10px 15px;
+						border-bottom: 1px dashed #d2d2d2;
+					}
+				}
+				.submit_div{
+					padding: 0 15px;
+					.jiade_p{
+						display: block;
+						overflow: hidden;
+						margin: 15px 0;
+						span{
+							float: left;
+							width: 55px;
+							font-size: 12px;
+							margin-left: 16px;
+							color: #666;
+							line-height: 30px;
+						}
+						.box1{
+							display: inline-block;
+							padding: 0 25px;
+							line-height: 28px;
+							font-size: 12px;
+							color: #333;
+							overflow: hidden;
+							border: 1px solid #ddd;
+						}
 					}
 				}
 			}
