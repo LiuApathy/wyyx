@@ -2,7 +2,7 @@
     $.fn.extend({
         countDown: function (options) {
             var defaults = {
-                    endTime: '2018/6/14',  //结束时间,90年后
+                    endTime: '2018/06/15',  //结束时间,90年后
                     day: '.day',
                     hour: '.hour',
                     minute: '.minute',
@@ -44,4 +44,5 @@
         }
     });
     $('.dingwei').countDown();//默认调用方法
+    $('.count_down').countDown();//默认调用方法
 })(jQuery);
